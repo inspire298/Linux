@@ -1,0 +1,2 @@
+1. WMware-Workstation下载官网：https://www.vmware.com/cn/products/workstation-pro.html
+2. 安装完虚拟机后检查虚拟网卡是否安装成功：打开设置->网络设置->高级网络设置->更多网络适配器的选项->检查是否存在WMnet1和WMnet8两个虚拟网卡（快捷方式进入：win+r,然后在输入框输入ncpa.cpl）

@@ -1,0 +1,3 @@
+1. FinalShell的下载地址为：http://www.hostbuf.com/downloads/finalshell_install.exe
+2. Mac: http://www.hostbuf.com/downloads/finalshell_install.pkg
+3. 打开FinalShell，点击文件图标，点击空白新建，填入远程连接的主机IP，填入连接主机的用户名，点击确定
