@@ -1,0 +1,14 @@
+1. yum命令
+· 操作系统安装软件有许多种方式，一般分为：1.下载安装包自行安装 2.系统的应用商店内安装
+· Linux与Windows系统同样支持这两种方式，yum命令安装软件是属于在Linux的命令行内的"应用商店"安装软件
+· yum：RPM包软件管理器，用于自动化安装配置Linux软件，并且可以自动解决依赖问题
+· 执行yum命令需要root权限，且需要联网
+语法：yum -y install | remove | search 软件名称
+· 选项：-y，自动确认，无需手动确认安装或卸载的过程
+· install：安装
+· remove：卸载
+· search：搜索
+2. apt命令
+· CentOS系统和Ubuntu系统是实用不同的包管理器，CentOS使用yun管理器，Ubuntu使用apt管理器
+语法：apt -y install | remove | search 软件名称
+· 用法与yum命令一致
