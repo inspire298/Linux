@@ -1,0 +1,15 @@
+1. 在WMware Workstation中配置固定IP
+配置固定IP需要2个大步骤：
+                                        1）在WMware Workstation中配置IP地址关网和网段(IP地址的范围)
+                                              在编辑中选择net8,查看IP和网关
+                                        2）在Linux系统中手动配置文件，固定IP
+                                             先执行vim /etc/sysconfig/network-scripts/ifcfg-ens33
+                                             修改DEFROUTE="static"
+                                             添加下面几行
+                                                    IPADDR="固定IP"
+                                                    NETMASK="255.255.255.0"
+                                                    GATEWAY="网关"
+                                                    DNS1="网关"
+                                            再执行下面两个命令
+                                            systemctl stop network 
+                                            systemctl start network 

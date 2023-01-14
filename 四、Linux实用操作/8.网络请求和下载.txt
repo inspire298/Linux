@@ -1,0 +1,18 @@
+1. ping命令
+可以通过ping命令，检查指定的网络服务器是否是可联通状态
+语法：ping -c num ip或域名 
+· 选项：-c，检查的次数，不使用-c选项，将无限次数持续检查
+· 参数：IP或域名，被检查服务器的IP地址或主机名地址
+
+2. wget命令
+语法：wget -b url
+· 选项：-b，可选，后台下载，会将日志写入到当前工作目录的wget-log文件
+· 参数：url，下载链接
+· 列如：后台下载apache-hadoop 3.3.0版本：wget -b http://archive.apache.org/dist/hadoop/common/hadoop-3.3.0/hadoop-3.3.0.tar.gz
+· 通过tail命令可以监控在后台的进度：tail -f wget-log
+
+3. curl命令
+curl命令可以发送http网络请求，可用于：下载文件、获取信息等
+语法：curl -O url
+· 选项：-O，用于文件下载，当url是下载链接时，可以使用此选项保存文件(与wget类似)
+· 参数：url，要发起请求的网络地址
