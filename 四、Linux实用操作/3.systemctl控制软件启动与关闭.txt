@@ -1,0 +1,8 @@
+systemctl命令
+Linux系统中很多软件(内置或第三方软件)均支持systemctl命令控制：启动、停止、开机自启
+能够被systemctl管理的软件，一般称之为：服务
+语法：systemctl start | stop | status | enable | disable 服务名
+系统内置的服务比较多，比如：NetworkManager(主网络服务)、network(副网络服务)、firewalld(防火墙服务)、sshd,ssh服务等
+· yum install -y ntp ,安装ntp软件，然后通过ntpd服务名，配合systemctl进行控制
+· yum install -y httpd ,安装apache服务器软件，如何可以通过httpd服务名，配合systemctl进行控制
+注：部分软件安装后没有自动集成到systemctl中，我们可以手动添加

@@ -1,0 +1,27 @@
+1. date命令
+通过date命令可以在命令行中查看系统的时间
+语法：date  -d  "+格式化字符串"
+· -d按照给定的字符串显示日期，一般用于日期计算
+· 格式化字符串：通过特定的字符串标记，来控制显示日期的格式
+· %Y   年
+· %y   年份后两位数字
+· %m  月份
+· %d   日
+· %H   小时
+· %M  分钟
+· %S   秒
+· %s    自1970-01-01 00:00:00到现在的秒数
+
+2. 修改Linux时区
+使用root权限，执行如下命令，修改时区为东八区时区
+· rm -f /etc/localtime
+· sudo ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+3. ntp程序
+1)我们可以通过ntp程序自动校准系统时间
+      安装ntp：yum -y install ntp
+      启动并设置开机自启：
+      · systemctl start ntpd
+      · systemctl enable ntpd
+2)手动校准(需要root权限)
+语法：ntpdate -u ntp.aliyun.com
